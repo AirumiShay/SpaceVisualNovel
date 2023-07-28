@@ -1,0 +1,11 @@
+label use_item(newitem):
+    if inventory[newitem[item]] == 'scroll':
+        "Вы использовали свиток"
+    elif inventory[newitem[item]] == 'elik':
+        "Вы выпили зелье"
+        
+    return
+label drop_item(newitem):
+    call remove_item_by_name(item_name) from _call_remove_item_by_name
+    "Вы выложили предмет [newiten]"
+    return
